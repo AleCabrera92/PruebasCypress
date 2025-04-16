@@ -62,7 +62,6 @@ describe('Agregar tareas', () => {
 
         cy.get('[data-testid="footer-navigation"] > :nth-child(1) > a').should('contain.text', 'All').click({ force: true });
         cy.get('.todo-list li').should('have.length', taskCount);
-    });
-    
+    })
 
 })
